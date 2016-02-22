@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+
+16/10/15
+
+Added streak popup, need to get the paragraph to center in the parent div.
+
+--------------------------------------------------------------------------------
+
+20/10/15
+
+v.30
+
+Added timer function with UI elements.
+changed randomizer function.
+switched to the new JSON function.
+
+Need to do:
+Change delay once JSON list has been expanded further.
+Tidy up and remove unecessary code.
+Polish and add more comments.
+
+--------------------------------------------------------------------------------
+
+21/10/15
+
+v.31
+
+Added 10 round system.
+Added play again/quit window at end of round 10.
+Sorted code so functions are above the click events.
+Cleaned up code.
+
+--------------------------------------------------------------------------------
+
+23/10/15
+
+v.32
+
+Added Old question clearing for when JSON list is larger.
+Changed image display position.
+Removed delay between questions if master list(instData) is longer than 4.
+Added SVN Repository.
+test database.
+
+To do:
+Change JSON request from taking the whole array instead of a smaller sample(40 questions)
+to reduce server strain and require less data.
+
+
+--------------------------------------------------------------------------------
+
+26/10/15
+
+v.35
+
+Old question removal fully functional, currently commented until JSON is longer.
+Removed global variables and made them local to window.ready function.
+Cleaned up code.
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+05/11/15
+
+v.40
+
+Removed old randomizeList function
+Fixed duplicate questions bug
+Bug where instData becomes null and won't update.
+
+
+
+--------------------------------------------------------------------------------
+
+06/11/15
+
+v.45
+
+Fixed bug where instData becomes null and won't update.(confirm if resolved).
+Added sounds to wrong and correct answers(new folder www/audio).
+Added version display to footer.
+Added cordova file for local file saves.

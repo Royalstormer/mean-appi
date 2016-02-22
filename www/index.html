@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="UTF-8" />
+ 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+ 	<title>meänAPPI</title>
+ 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" type="text/css">
+ 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script> 
+ 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/quizgame.js"></script>
+ 	<script type="text/javascript" src="js/cordova.js"></script>
+
+ 	<link rel="stylesheet" href="css/app.css" type="text/css">
+     
+ </head>
+ <body>
+
+ 	<div data-role="page" id="home" style="text-align:center">
+        <div data-role="header"><h1>MeanAPPI</h1></div>
+
+        <p id="startMsg"><h3>Ett roligt sätt att lära sig Meänkieli i mobilen</h3></p>
+        <div id ="menuButtons">
+            <div id = "startButton" style=""></div>
+            <div id = "localSave"></div>
+        </div>
+    
+        <div data-role="footer" data-position="fixed" id="verNr" style="text-align:center"></div>
+
+     </div>
+        
+        
+    <div data-role="page" id="gamePage">
+        
+        <div data-role="header" >
+ 			<h1><div id="quizName"></div></h1> 
+            <div id = "back"></div>
+            <button class="ui-btn-right ui-btn ui-btn-b ui-icon-check ui-btn-icon-right ui-btn-inline ui-corner-all ui-mini" id="currentPointsCounter">0
+            </button>
+                <div id = "muteButton"></div> 
+                
+                </div>
+ 		
+        <div data-role="content" id="content" style="align-content:center">
+            <div id="dialogWindow"></div>
+            <div id="popupbasic"></div>
+            <div id="questionsText"></div>
+        </div>
+            
+        <div id="timerBar"></div>
+        <div id="timerBarBG"></div>
+
+        <div data-role="footer" data-position="fixed" id="verNr" style="text-align:center">
+                        
+
+        
+        </div>
+        
+    </div>
+        
+        
+    <div data-role="page" id="jsonFetch">
+            
+        <div data-role="header">
+            <h1>Settings</h1> 
+            <div><a href='#home' data-role='header' data-back-btn='true' class='app_back ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-delete' data-transition='slide'data-direction='reverse'>Back</a></div>
+            
+            
+        </div>
+            
+
+            
+        <div data-role="footer" data-position="fixed" id="verNr" style="text-align:center"></div>
+        
+    </div>
+        <script type="text/javascript">app.initialize()</script>
+ </body>
+</html>
